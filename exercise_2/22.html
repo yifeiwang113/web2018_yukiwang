@@ -2,56 +2,71 @@
 <html>
 <head>
   <title>Yuki's Awesome Site</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style22.css">
+  <link rel="stylesheet" type="text/css" href="css3_3d.css">
+
   <style>
     body{
-      background-color: #eee;
+      background: url('image/b2.jpeg');
     }
     div{
       text-align: center;
     }
-    img {
-      width: 300px;
-      padding: 50px 30px;
-      opacity: 1;
-      transition: width,opacity 0.5s;
-    }
-    .img2 img:hover{
-      opacity: 0.5;
-      transition: all 0.5s;
+    img{
+      width:290px;
     }
   </style>
 </head>
 <body>
-<div style="
-    border: 1px solid #ccc;
-    line-height: 26px;
-    margin: 0 auto;
-    padding: 30px 10px;
-    background: url('image/banner.jpg');
-    ">Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page
-  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-  letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop
-  publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
-  ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-  accident, sometimes on purpose (injected humour and the like).
-</div><div style="position:fixed;margin: 0 auto;left: 45%;margin-top: 15px;"><a href="index.html" style="
+<div style="position:fixed;margin: 0 auto;left: 45%;margin-top: 0px;"><a href="index.html" style="
     background: #aaa;
     padding: 10px;
     border-radius: 10px;
     color: #fff;
     text-decoration: none;
 ">jewelry list</a></div>
-<div class="img2"  style="margin-top: 80px">
- <a href="image/11.jpg" target="_blank">
-  <img src="image/11.jpg" alt="">
-</a><br>
-<a href="image/22.jpg" target="_blank">
-  <img src="image/22.jpg" alt="">
-</a>
-  <br>
-<a href="image/33.jpg" target="_blank">
-  <img src="image/33.jpg" alt="">
-  </a>
+<div id="container" style="padding-top: 30px;">
+        <ul id="grid" class="group">
+            <li>
+                <div class="details">
+                  <h3>jewelry</h3>
+                    <a class="more" href="#info1">view details</a> 
+                </div>
+               <a class="more" href="#info1"><img src="image/11.jpg"></a>
+            </li>
+            <li>
+                <div class="details">
+                  <h3>jewelry</h3>
+                    <a class="more" href="#info2">view details</a>
+          </div>
+                <a href="#info2"><img src="image/22.jpg"></a>
+            </li>
+            <li class="end">
+                <div class="details">
+                  <h3>jewelry</h3>
+                    <a class="more" href="#info3">view details</a>
+          </div>
+                <a href="#info3"><img src="image/33.jpg"></a>
+            </li>
+        </ul>
+    </div>
+    <div style="
+       border: 1px solid #ccc;
+    line-height: 26px;
+    margin: 0 auto;
+    width: 60%;
+    height: 60px;
+    overflow: scroll;
+    margin-top: 20px;
+    padding: 30px 10px;
+    background: #fff;
+    ">Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page
+  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+  letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop
+  publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+  ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+  accident, sometimes on purpose (injected humour and the like).
 </div>
 </body>
 </html>

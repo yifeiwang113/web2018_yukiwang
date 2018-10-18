@@ -2,32 +2,33 @@
 <html>
 <head>
   <title>Yuki's Awesome Site</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <style>
     body{
-      background-color: #eee;
+      background-color:#615858;
     }
     div{
       text-align: center;
     }
-    img {
-      width: 300px;
-      padding: 50px 30px;
-      opacity: 1;
-      transition: width,opacity 0.5s;
-    }
-    .img1 img:hover{
-      width: 350px;
-      transition: all 0.5s;
-    }
-  </style>
+.demo{width:360px; margin:60px auto 10px auto}
+@media only screen and (min-width: 420px) {
+  .demo{width:1200px; margin:60px auto 10px auto}
+}
+.box{float:left; width:380px; height:260px}
+.clear{clear:both}
+</style>
 </head>
-<body>
+<body style="
+    background: url('image/backage.jpg');
+    background-size: cover;
+"> 
 <div style="
     border: 1px solid #ccc;
     line-height: 26px;
     margin: 0 auto;
     padding: 30px 10px;
-    background: url('image/banner.jpg');
+    background: #c7a444;
+    opacity: 0.8;
     ">Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page
   when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
   letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop
@@ -41,17 +42,45 @@
     color: #fff;
     text-decoration: none;
 ">jewelry list</a></div>
-<div class="img1" style="margin-top: 80px">
-<a href="image/11.jpg" target="_blank">
-  <img src="image/11.jpg" alt="">
-</a><br>
-<a href="image/22.jpg" target="_blank">
-  <img src="image/22.jpg" alt="">
-</a>
-  <br>
-<a href="image/33.jpg" target="_blank">
-  <img src="image/33.jpg" alt="">
-  </a>
+<div class="demo">
+
+  <div class="box">
+    <div class="he_border1">
+      <img class="he_border1_img" src="image/11.jpg" alt="Image 01">
+      <div class="he_border1_caption">
+        <h3 class="he_border1_caption_h">jewelry</h3>
+        <p class="he_border1_caption_p">jewelry detail</p>
+        <a class="he_border1_caption_a" href="#"></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="box">
+    <div class="he_3DFlipX">
+      <div class="he_3DFlipX_inner">
+        <div class="he_3DFlipX_img">
+          <img src="image/33.jpg" alt="img01">
+        </div>
+        <div class="he_3DFlipX_caption">
+          <h3>jewelry</h3>
+          <p>jewelry detail</p>
+        </div>
+        <a href="#"></a>
+       </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="he_border2">
+      <img class="he_border2_img" src="image/22.jpg" alt="Image 01">
+      <div class="he_border2_caption">
+        <h3 class="he_border2_caption_h">jewelry</h3>
+        <p class="he_border2_caption_p">jewelry detail</p>
+        <a class="he_border2_caption_a" href="#"></a>
+      </div>
+    </div>
+  </div>
+  
+</div>
 </div>
 </body>
 </html>

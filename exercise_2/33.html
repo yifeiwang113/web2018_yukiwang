@@ -2,32 +2,28 @@
 <html>
 <head>
   <title>Yuki's Awesome Site</title>
+<link rel="stylesheet" type="text/css" href="shake.css">
   <style>
     body{
-      background-color: #eee;
+     background: url(image/b3.jpg);
+     background-size: cover;
     }
     div{
       text-align: center;
     }
-    img {
-      width: 300px;
-      padding: 50px 30px;
-      opacity: 1;
-      transition: width,opacity 0.5s;
-    }
-    .img3 img:hover{
-      border: 1px solid #d5d500;
+    img{
+      width: 290px;
     }
   </style>
 </head>
-<body>
+<body >
 <div style="
     border: 1px solid #ccc;
     line-height: 26px;
     margin: 0 auto;
     padding: 30px 10px;
     background: url('image/banner.jpg');
-    ">Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page
+    " class="shake shake-vertical">Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page
   when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
   letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop
   publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
@@ -43,15 +39,14 @@
 ">jewelry list</a></div>
 <div class="img3"  style="margin-top: 80px">
 <a href="image/11.jpg" target="_blank">
-  <img src="image/11.jpg" alt="">
-</a><br>
-<a href="image/22.jpg" target="_blank">
-  <img src="image/22.jpg" alt="">
+  <img  class="shake shake-hard" src="image/11.jpg" alt="">
 </a>
-  <br>
+<a href="image/22.jpg" target="_blank">
+  <img class="shake shake-horizontal" src="image/22.jpg" alt="">
+</a>
 
 <a href="image/33.jpg" target="_blank">
-  <img src="image/33.jpg" alt="">
+  <img class="shake shake-opacity" src="image/33.jpg" alt="">
   </a>
 </div>
 </body>

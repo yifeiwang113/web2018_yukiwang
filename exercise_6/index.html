@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0">
+<meta charset="utf-8">
+<title>Scan Generator</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="scripts.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        input{
+            font-family: sans-serif;
+            font-size: 11px;
+        }
+        button{
+          font-family: sans-serif;
+        }
+        li{
+          list-style-type: none;    
+          width: 25%;
+          float: left;
+        }
+        
+        #poster{
+            display: inline-block;
+            text-align: left;
+            line-height: 30px;
+            vertical-align: middle;
+        }
+        
+     
+        
+        img {
+            max-height: 80vh;
+            max-width: 30vw;
+        }
+        
+        #date{
+            font-size: 11px;
+        }
+        
+    </style>
+</head>
+<body style="background-color: #624343;color:#fff;">
+    <div id="container" style="margin-top: 10%;">
+        <ul>
+            <li>
+            <div >
+                <div class="text">(Placeholder Text)</div>
+                <img src="https://picsum.photos/350/200?image=0&blur"  alt=" ">
+                <div id="date"></div>
+            <form>
+            <div><textarea class="default-value"   cols="52" rows="6">text1 here</textarea></div>
+            <div><input id="submit" type="button" value="Generate Text" onclick="append(0)" /></div>
+            </form>
+            <input id="file" type="file" onchange="previewFile(0)">
+            </div>
+            </li>  
+            <li>
+            <div >
+                <div class="text">(Placeholder Text)</div>
+                <img src="https://picsum.photos/350/200/?random"  alt=" ">
+                <div id="date"></div>
+            <form>
+            <div><textarea class="default-value"   cols="52" rows="6">text2 here</textarea></div>
+            <div><input id="submit" type="button" value="Generate Text" onclick="append(1)" /></div>
+            </form>
+            <input id="file" type="file" onchange="previewFile(1)">
+            </div>
+            </li>
+            <li>
+            <div >
+                <div class="text">(Placeholder Text)</div>
+                <img src="https://picsum.photos/g/350/200"  alt=" ">
+                <div id="date"></div>
+            <form>
+            <div><textarea class="default-value"   cols="52" rows="6">text3 here</textarea></div>
+            <div><input id="submit" type="button" value="Generate Text" onclick="append(2)" /></div>
+            </form>
+            <input id="file" type="file" onchange="previewFile(2)">
+            </div>
+            </li>
+            <li>
+            <div >
+                <div class="text">(Placeholder Text)</div>
+                <img src="http://fakeimg.pl/350x200/282828/eae0d0"  alt=" ">
+                <div id="date"></div>
+            <form>
+            <div><textarea class="default-value"   cols="52" rows="6">text4 here</textarea></div>
+            <div><input id="submit" type="button" value="Generate Text" onclick="append(3)" /></div>
+            </form>
+            <input id="file" type="file" onchange="previewFile(3)">
+            </div>
+            </li>
+        </ul>
+         </div>
+    </div>
+    </body>
+</html>
